@@ -12,7 +12,6 @@
 [![X](https://img.shields.io/badge/X-@PicadoLabs-000000?style=flat-square&logo=x)](https://x.com/PicadoLabs)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Picado_Labs-0077b5?style=flat-square&logo=linkedin)](https://www.linkedin.com/company/picado-labs/)
 
-[Ecosystem](#the-picado-labs-ecosystem) • [Projects](#core-projects) • [Architecture](#the-closed-loop-architecture) • [Comparison](#architectural-comparison) • [Quickstart](#5-minute-ecosystem-quickstart) • [Contributing](#contributing)
 
 </div>
 
