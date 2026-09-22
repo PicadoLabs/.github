@@ -14,70 +14,44 @@ Plan → Route → Execute → Verify → Evaluate
 
 ---
 
-## What it is
+Picado Labs builds open-source infrastructure that splits AI-driven software development into deterministic, observable stages. 
 
-Picado Labs builds open-source infrastructure that splits AI-driven software development into deterministic, observable stages instead of one monolithic agent loop:
+## The Ecosystem
 
-```
-PLAN → ROUTE → EXECUTE → VERIFY → EVALUATE → FEEDBACK
-```
+Instead of a monolithic AI prompt, we divide the engineering lifecycle into four specialized, verifiable tools:
 
-## Projects
-
-| Project                                                              | Stage            | What it solves                                                                |
-| -------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------- |
-| [**build-with-ai**](https://github.com/PicadoLabs/build-with-ai)     | Plan             | Structured AI development workflows with persistent project context           |
-| [**AI Model Router**](https://github.com/PicadoLabs/ai-model-router) | Route            | Multi-objective model routing across quality, cost, latency, and capabilities |
-| [**Terminal Agent**](https://github.com/PicadoLabs/terminal-agent)   | Execute · Verify | Autonomous coding with sandboxing, recovery, checkpoints, and verification    |
-| [**AgentBench**](https://github.com/PicadoLabs/agent-bench)          | Evaluate         | Reproducible evaluation and benchmarking for software-engineering agents      |
-
+| Project | Stage | The Problem | The Picado Edge |
+| :--- | :--- | :--- | :--- |
+| [**build-with-ai**](https://github.com/PicadoLabs/build-with-ai) | **Plan** | Devs struggle to orchestrate AI for large, complex architectures. | **Zero-API CLI** that guides you step-by-step using your existing ChatGPT/Claude interface. |
+| [**AI Model Router**](https://github.com/PicadoLabs/ai-model-router) | **Route** | Balancing LLM costs, rate limits, and reasoning capabilities is hard. | **100% Local & Explainable** routing with a visual "Traffic Control Room" UI. |
+| [**Terminal Agent**](https://github.com/PicadoLabs/terminal-agent) | **Execute** | Autonomous agents frequently break builds without strict verification. | **Verification-first sandboxing** with built-in state checkpoints and instant rollback. |
+| [**AgentBench**](https://github.com/PicadoLabs/agent-bench) | **Evaluate** | Measuring agent performance objectively is heavy and provider-locked. | **Instant GitHub PR Ingestion** to create provider-agnostic benchmarks in seconds. |
 
 ## Quickstart
 
 ```bash
-# Plan
+# 1. Plan your project architecture
 npx build-with-ai init
 
-# Route
+# 2. Route prompts to the optimal model
 python backend/app/cli/main.py route "Build a secure token bucket rate limiter"
 
-# Execute
+# 3. Execute and verify the code
 terminal-agent run "Implement token bucket rate limiter with pytest tests"
 
-# Evaluate
-python agentbench.py run --benchmark fix-rate-limiter --provider ollama --model qwen2.5-coder:1.5b
+# 4. Evaluate the agent's performance
+python agentbench.py run --benchmark fix-rate-limiter --provider ollama
 ```
 
-See each project's repo for full setup instructions.
+*See individual repository readmes for full setup instructions.*
 
-## Why
+## Contributing & Community
 
-| | Traditional | Picado Labs |
-|---|---|---|
-| Prompting | Monolithic | Structured workflows |
-| Context | Chat history | Persistent memory |
-| Model choice | Fixed | Dynamic routing |
-| Execution | Direct host access | Sandboxed |
-| Verification | AI self-report | Independent testing |
-| Evaluation | Subjective | Standardized benchmarks |
+Open source under Apache 2.0. PRs are welcome! 
 
-## Contributing
-
-Open source under Apache 2.0. PRs welcome — see individual repo issue trackers for good first issues.
-
-```bash
-git checkout -b feature/my-feature
-pytest && npm test
-```
-
-## Community
-
-Built by [Vardhman (Kap10)](https://github.com/Kaap10) — [X](https://x.com/Kap10x) · [LinkedIn](https://www.linkedin.com/company/picado-labs/) · [picadolabs.me](https://picadolabs.me) · picadolabs@gmail.com
+Built by [Vardhman (Kap10)](https://github.com/Kaap10) — [X (Twitter)](https://x.com/Kap10x) | [LinkedIn](https://www.linkedin.com/company/picado-labs/) | [picadolabs.me](https://picadolabs.me)
 
 ---
-
 <div align="center">
-
-**Open source. Practical AI infrastructure. Built to be verified.**
-
+<b>Open source. Practical AI infrastructure. Built to be verified.</b>
 </div>
