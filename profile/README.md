@@ -24,12 +24,13 @@ PLAN → ROUTE → EXECUTE → VERIFY → EVALUATE → FEEDBACK
 
 ## Projects
 
-| Stage | Project | Purpose |
-|---|---|---|
-| Plan | [**build-with-ai**](https://github.com/PicadoLabs/build-with-ai) | Zero-API prompt architect — turns goals into structured phases & context |
-| Route | [**Model Router**](https://github.com/PicadoLabs/ai-model-router) | Explainable routing across models by quality, cost & latency |
-| Execute | [**Terminal Agent**](https://github.com/PicadoLabs/terminal-agent) | Sandboxed coding agent, verify-first, with rollback |
-| Evaluate | [**AgentBench**](https://github.com/PicadoLabs/agent-bench) | Provider-agnostic benchmark suite for coding agents |
+| Project                                                              | Stage            | What it solves                                                                |
+| -------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------- |
+| [**build-with-ai**](https://github.com/PicadoLabs/build-with-ai)     | Plan             | Structured AI development workflows with persistent project context           |
+| [**AI Model Router**](https://github.com/PicadoLabs/ai-model-router) | Route            | Multi-objective model routing across quality, cost, latency, and capabilities |
+| [**Terminal Agent**](https://github.com/PicadoLabs/terminal-agent)   | Execute · Verify | Autonomous coding with sandboxing, recovery, checkpoints, and verification    |
+| [**AgentBench**](https://github.com/PicadoLabs/agent-bench)          | Evaluate         | Reproducible evaluation and benchmarking for software-engineering agents      |
+
 
 ## Quickstart
 
